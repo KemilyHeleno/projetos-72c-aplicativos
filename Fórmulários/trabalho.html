@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    
+    <head>
+    <meta charset = "UTF-8">
+    <title>Kemily</title>
+    </head>
+    
+    <!-- Inserir cor do fundo -->
+    <body bgcolor="yellow">
+        <!-- Início para usar a âncora-->
+        <a name="Início">
+        <!-- Imagem -->
+        <img src="kemily.jpg" width="150" height="150">
+            <!-- PRE é usado para que o texto aparece exatamente da forma que esta escrito no programa -->
+            <PRE>
+        <p><font face="arial" size="4"> Kemily nº 10 72C</font></p>
+            </PRE>
+        <!-- Usado para fazer um formulário -->
+        <form>
+            <!-- Determina a fonte do texto o tamanho da letra -->
+            <font face="arial" size="4">
+                <!-- fieldset faz uma caixa para os campos -->
+                <!-- size= tamanho, maxlenght= máx de caracteres, required= obrigatório -->
+                <!-- Digita o nome da pessoa, obrigatório -->
+                <fieldset>Nome: 
+                <input type=text name="Nome" size="40" maxlenght="50" required><br></fieldset>
+                <!-- Digita o endereço da pessoa, obrigatório -->
+                <fieldset>Endereço: 
+                <input type=text name="Endereco" size="40" maxlenght="50" required><br></fieldset>
+                <!-- Digita o e-mail da pessoa, obrigatório -->
+                <fieldset>E-mail: 
+                <input type=text name="Email" size="40" maxlenght="50" required><br></fieldset>
+                <!-- Digita o telefone da pessoa -->
+                <fieldset>Telefone: 
+                <input type=text name="Telefone" size="12"><br></fieldset>
+                <!-- type=radio faz botão de opção -->
+                <!-- botões de opção para a escolha de escolaridade -->
+                <fieldset><P>Escolaridade: <br>
+                    <input type=radio name="fundamental">Ensino Fundamental<br>
+                    <input type=radio name="medio">Ensino Médio<br>
+                    <input type=radio name="superior">Ensino Superior<br>
+                    <input type=radio name="pos">Pós Graduação<br>
+                    <input type=radio name="mestrado">Mestrado<br>
+                    <input type=radio name="doutorado">Doutorado<br></P></fieldset>
+                <!-- type=checkbox faz caixa de seleção -->
+                <!-- caixas de seleção para a escolha do banco tendo como Banco do Brasil o banco já pré selecionado -->
+                <fieldset>Banco utilizado:<br>
+                    <input type=checkbox name="brasil" checked> Banco do Brasil<br>
+                    <input type=checkbox name="caixa"> Caixa<br>
+                    <input type=checkbox name="santander"> Santander<br>
+                    <input type=checkbox name="itau"> Itaú<br>
+                    <input type=checkbox name="bradesco"> Bradesco<br>
+                </fieldset>
+                <!-- select/option faz um campo de seleção e suas opções -->
+                <!-- Campo de seleção para escolher o meio de transporte -->
+                <fieldset>Meio de Transporte:<br>
+                    <select name="transporte">
+                        <option>Ônibus</option>
+                        <option>Carro</option>
+                        <option>Moto</option>
+                        <option>Bicicleta</option>
+                        <option>Caminhada</option>
+                        <option>Carona</option>
+                        <option>Patinete</option>
+                        <option>Outros</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>Qual sua opinião sobre o tempo gasto no percursso casa/trabalho trabalho/casa:<br>
+                    <br>
+                    1 - Menos de 10 minutos. <br>
+                    2 - Menos de 20 minutos. <br>
+                    3 - 30 minutos. <br>
+                    4 - Menos de 40 minutos. <br>
+                    5 - Menos de 60 minutos. <br>
+                    6 - Mais de 60 minutos. <br>
+                    <br>
+                    <br>
+                    <!-- caixa de números -->
+                    <input type=number type=min type=max name="min"> <br>
+                    <br>   
+                </fieldset>
+                <br>
+                <fieldset>Faça o upload do arquivo da sua imagem:<br>
+                    <br>
+                    <input name="kemily" type=file> 
+                    <br> Kemily <br>
+                    <br>   
+                </fieldset>
+                <!-- caixa para comentário -->
+                <fieldset>Digite seu Cometário:<br>
+                    <textarea name="comentario" rows="10" cols="60"></textarea>
+                </fieldset>
+                <!-- Insere botão para enviar os dados -->
+                <input type=submit value="Enviar">
+                <!-- Insere botão para limpar a tela para redigitação dos dados -->
+                <input type=reset value="Limpar"><br><br>
+                <!-- Insere link para o retorno ao início da página -->
+                <a href= "#Início">Voltar ao topo da página</a>
+            </font>
+        </form>
+        </a>
+    </body>
+    </html>

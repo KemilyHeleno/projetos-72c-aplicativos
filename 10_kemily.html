@@ -1,0 +1,36 @@
+<html>
+    <script>
+        function validarEmail(name1, name2)
+        {
+            var email1 = document.getElementById(name1).value;
+            var email2 = document.getElementById(name2).value;
+                 
+            if (email1 != "" && email2 != "" && email1 === email2)
+            {
+                
+            }
+            else
+            {
+                alert('E-mails Diferentes!');
+            }
+        } 
+    </script>
+    <body>
+        <p>
+            <label for="nome_login" class="email">E-mail:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="mail" class="campo_email" name="mail" required="required" type="email" placeholder="ex. contato@cti.com"/>
+        </p>
+        <p> 
+            <label for="email_login" class="cemail">Confirme o e-mail:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="mail1" class="campo_cemail" name="mail1" required="required" type="email" placeholder="ex. contato@cti.com" onblur="validarEmail('mail','mail1')"/> 
+        </p>
+        <br>
+        <p>
+            Verifica se o primeiro endereço de e-mail é igual a confirmação de e-mail.
+            Se forem diferentes devolve uma mensagem invalidando o endereço de e-mail e solicitando a redigitação.
+            Se forem iguais ele prossegue para a digitação do próximo campo.
+        </p>
+    </body>
+</html>
